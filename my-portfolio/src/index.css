@@ -1,1 +1,7 @@
 @import "tailwindcss";
+@import "./styles/tokens.css";
+
+@layer base {
+  :root { --brand: var(--color-amber-500); --accent: var(--color-teal-500); }
+  .dark { --brand: var(--color-amber-400); --accent: var(--color-teal-400); }
+}
