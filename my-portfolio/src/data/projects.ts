@@ -17,15 +17,15 @@ export const projects: Project[] = [
   {
     id: "ticketgen",
     title: "Conference Ticket Generator",
-    description: "SaaS simples para emissão de tickets com QR code e integração com Vercel.",
-    tags: ["SaaS", "Vite", "Tailwind"],
-    href: "#",
+    description: "Página de treinamento simples em HTML e CSS para geração de tickets fictícios.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    href: "https://ticket-generator.tucajanahu.app",
   },
   {
-    id: "sani",
+    id: "calculadora",
     title: "Calculadora de Idade",
     description: "Projeto com react para calcular a idade exata em anos, meses e dias.",
-    tags: ["React", "Typescript"],
-    href: "#",
+    tags: ["React", "Typescript", "Tailwind"],
+    href: "https://calculadora.tucajanahu.app",
   },
 ];

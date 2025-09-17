@@ -5,7 +5,7 @@ function Navbar() {
     <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-neutral-900/60 border-b border-black/5 dark:border-white/10">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 h-14 flex items-center justify-between">
         <Link to="/" className="font-semibold tracking-tight text-lg">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-lime-400 via-cyan-500 to-violet-600 monospace">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-lime-400  to-cyan-500 monospace">
             Artur Janahú
           </span>
         </Link>

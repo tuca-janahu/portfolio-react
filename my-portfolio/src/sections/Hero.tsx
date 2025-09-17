@@ -42,8 +42,8 @@ export default function Hero() {
           <span className="text-lime-400">desenvolvimento</span>
         </h1>
         <p className="mt-4 text-base sm:text-lg text-black/70 dark:text-white/70 max-w-2xl mx-auto">
-          Desenvolvedora e pesquisadora. Integro engenharia, dados e evidência
-          científica para entregar produtos digitais e estudos clínicos de alto
+          Desenvolvedor fullstack. Integro engenharia, análise de dados e automação de processos
+          para entregar sistemas e produtos digitais de alto
           impacto.
         </p>
         <div className="mt-8 flex items-center justify-center gap-3">
@@ -54,7 +54,7 @@ export default function Hero() {
             Ver projetos
           </Link>
           <a
-            href="#about"
+            href="/about"
             className="inline-flex items-center justify-center rounded-xl border border-black/10 dark:border-white/10 px-5 py-2.5 text-sm hover:bg-black/5 dark:hover:bg-white/5"
           >
             Saber mais
