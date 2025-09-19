@@ -1,5 +1,7 @@
+import Form from "../components/Form";
 import Hero from "../sections/Hero";
 import ProjectsPeek from "../sections/ProjectsPeek";
+import { BitsOrbit } from "../components/BitsOrbit";
 
 export default function Home() {
   return (
@@ -12,12 +14,15 @@ export default function Home() {
         className="mx-auto max-w-6xl px-4 sm:px-6 py-16"
       >
         <h2 className="text-xl sm:text-2xl font-semibold mb-3">Contato</h2>
-        <p className="text-sm text-black/70 dark:text-white/70 max-w-2xl">
-          Para convites e colaborações:{" "}
-          <a className="underline" href="mailto:arturjanahu@gmail.com">
-            arturjanahu@gmail.com
-          </a>
-        </p>
+        <div className="grid gap-8 lg:grid-cols-2 items-center">
+          <div className="order-2 lg:order-1">
+            <Form />
+          </div>
+          <div className="order-1 lg:order-2">
+            <BitsOrbit />
+          </div>
+        </div>
+        
       </section>
     </main>
   );
