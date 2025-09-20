@@ -1,4 +1,3 @@
-import { BitsOrbit } from "../components/BitsOrbit";
 import Form from "../components/Form";
 
 function Contact() {

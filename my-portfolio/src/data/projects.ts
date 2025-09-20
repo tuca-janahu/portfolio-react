@@ -28,4 +28,11 @@ export const projects: Project[] = [
     tags: ["React", "Typescript", "Tailwind"],
     href: "https://calculadora.tucajanahu.app/",
   },
+  {
+    id: "express",
+    title: "Projeto com Express + TS",
+    description: "Projeto simples com Node e Express para aprofundamento das suas funcionalidades",
+    tags: ["Node.js", "Typescript", "Express"],
+    href: "https://back.list.tucajanahu.app/",
+  }
 ];

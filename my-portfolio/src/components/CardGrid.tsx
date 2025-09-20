@@ -1,10 +1,20 @@
 import { projects } from "../data/projects";
 import { SpotlightCard } from "./SpotlightCard";
 
-function CardGrid() {
+type Props = {
+  limit?: number;         // se definido, corta a lista
+  title?: string;         // opcional, para reutilizar no /projects
+  showHeaderLink?: boolean; // mostra "Ver todos" só quando for um peek
+};
+
+function CardGrid({
+  limit,
+}: Props) {
+  const list = typeof limit === "number" ? projects.slice(0, limit) : projects;
+
   return (
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {projects.map((p) => (
+      {list.map((p) => (
         <SpotlightCard key={p.id} className="p-5">
             <div className="flex h-full flex-col">
               <h3 className="text-lg font-medium mb-1">{p.title}</h3>

@@ -2,7 +2,7 @@ import { Link, NavLink, useNavigate } from "react-router";
 
 function Navbar() {
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   function handleContactClick() {
     const el = document.getElementById("contact-section");
@@ -17,7 +17,7 @@ function Navbar() {
     <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-neutral-900/60 border-b border-black/5 dark:border-white/10">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 h-14 flex items-center justify-between">
         <Link to="/" className="font-semibold tracking-tight text-lg">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-lime-400  to-cyan-500 monospace">
+          <span className="bg-clip-text text-transparent bg-gradient-to-b from-lime-400  via-lime-400  monospace">
             Artur Janahú
           </span>
         </Link>
@@ -31,14 +31,14 @@ function Navbar() {
         <div className="flex items-center gap-4 ">
         
           <a href="https://github.com/tuca-janahu" target="_blank" rel="noopener noreferrer">
-          <img className="h-7 w-7 cursor-pointer invert hover:opacity-50 " src="/github.png" alt="GitHub" />
+          <img className="h-7 w-7 cursor-pointer dark:invert hover:opacity-50 " src="/github.png" alt="GitHub" />
           </a>
         
          <a href="https://www.linkedin.com/in/artur-janah%C3%BA-2530b5272/" target="_blank" rel="noopener noreferrer">
-          <img className="h-7 w-7 cursor-pointer invert hover:opacity-50" src="/linkedin.png" alt="LinkedIn" />
+          <img className="h-7 w-7 cursor-pointer dark:invert hover:opacity-50" src="/linkedin.png" alt="LinkedIn" />
       </a>
           <a href="https://wa.me/5571993955005?text=Ol%C3%A1%2C%20vi%20seu%20portfolio%20e%20tenho%20interesse%20em%20parceria%21" target="_blank" rel="noopener noreferrer">
-            <img className="h-7 w-7 cursor-pointer invert hover:opacity-50" src="/whatsapp.png" alt="WhatsApp" />
+            <img className="h-7 w-7 cursor-pointer dark:invert hover:opacity-50" src="/whatsapp.png" alt="WhatsApp" />
           </a>
         </div>
 

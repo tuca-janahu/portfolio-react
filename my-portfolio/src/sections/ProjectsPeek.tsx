@@ -9,7 +9,7 @@ export default function ProjectsPeek() {
         <h2 className="text-xl sm:text-2xl font-semibold">Projetos em destaque</h2>
         <Link to="/projects" className="text-sm text-indigo-600 hover:underline">Ver todos</Link>
       </div>
-      <CardGrid />
+      <CardGrid limit={3}/>
     </section>
   );
 }

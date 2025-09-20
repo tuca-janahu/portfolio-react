@@ -1,7 +1,8 @@
 import Form from "../components/Form";
 import Hero from "../sections/Hero";
 import ProjectsPeek from "../sections/ProjectsPeek";
-import { BitsOrbit } from "../components/BitsOrbit";
+import Cubes from "../components/Cubes"; 
+
 
 export default function Home() {
   return (
@@ -19,7 +20,19 @@ export default function Home() {
             <Form />
           </div>
           <div className="order-1 lg:order-2">
-            <BitsOrbit />
+            <div style={{ height: '600px', position: 'relative' }}>
+              <Cubes 
+                gridSize={8}
+                maxAngle={60}
+                radius={4}
+                borderStyle="2px dashed #5227FF"
+                faceColor="#1a1a2e"
+                rippleColor="#ff6b6b"
+                rippleSpeed={1.5}
+                autoAnimate={true}
+                rippleOnClick={true}
+              />
+            </div>
           </div>
         </div>
         
