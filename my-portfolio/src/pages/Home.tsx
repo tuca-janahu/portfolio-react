@@ -22,16 +22,17 @@
            
               <div className="order-1 lg:order-2 lg:self-start">   {/* sobe para o topo da célula direita */}
   <div className="relative w-full max-w-[560px] aspect-square mx-auto">  {/* tamanho do palco */}
-    <div className="absolute inset-0 grid place-items-center">           {/* centraliza o Cubes */}
+    <div className="m-auto items-center p-20">           {/* centraliza o Cubes */}
       <Cubes
-        gridSize={10}          // mais células
-        cellGap={16}            // espaçamento entre cubos
+        gridSize={8}          // mais células
+        cellGap={20}            // espaçamento entre cubos
         maxAngle={60}
+        cubeSize={30}          // tamanho do cubo
         radius={4}
-        borderStyle="1px dashed #a3e635" // lime-400
+        borderStyle="2px dashed #a3e635" // lime-400
         faceColor="#1a1a1a"
-        rippleColor="#ff6b6b"
-        rippleSpeed={1.5}
+        rippleColor="#a3e635"
+        rippleSpeed={3.0}
         autoAnimate
         rippleOnClick
       />

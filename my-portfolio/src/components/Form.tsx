@@ -104,7 +104,7 @@ function Form () {
         <button
           type="submit"
           disabled={loading}
-          className="inline-flex items-center justify-center rounded-xl bg-lime-500 text-neutral-950 px-5 py-2.5 text-sm font-medium shadow hover:bg-lime-600 disabled:opacity-60"
+          className="inline-flex items-center justify-center rounded-xl bg-lime-400 text-neutral-950 px-5 py-2.5 text-sm font-medium shadow hover:bg-neutral-100 cursor-pointer transition-colors disabled:opacity-60"
         >
           {loading ? "Enviando…" : "Enviar"}
         </button>
