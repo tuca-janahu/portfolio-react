@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 export default function Hero() {
   return (
-    <section className="relative isolate overflow-hidden">
+    <section className="relative isolate overflow-hidden ">
       {/* Fundo com grid + spotlight central */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-[radial-gradient(50%_60%_at_50%_0%,rgba(99,102,241,0.15),transparent_60%)] dark:bg-[radial-gradient(50%_60%_at_50%_0%,rgba(129,140,248,0.2),transparent_60%)]" />
@@ -46,16 +46,16 @@ export default function Hero() {
           para entregar sistemas e produtos digitais de alto
           impacto.
         </p>
-        <div className="mt-8 flex items-center justify-center gap-3">
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
           <Link
             to="/projects"
-            className="inline-flex items-center justify-center rounded-xl bg-black text-white dark:bg-neutral-100 dark:text-black px-5 py-2.5 text-sm font-medium shadow dark:hover:bg-lime-400 transition duration-300 ease-out hover:bg-neutral-900"
+            className="w-full sm:w-auto inline-flex items-center justify-center rounded-xl bg-black text-white dark:bg-neutral-100 dark:text-black px-5 py-2.5 text-sm font-medium shadow dark:hover:bg-lime-400 transition duration-300 ease-out hover:bg-neutral-900"
           >
             Ver projetos
           </Link>
           <a
             href="/about"
-            className="inline-flex items-center justify-center rounded-xl border border-black/10 dark:border-white/10 px-5 py-2.5 text-sm hover:bg-black/5 dark:hover:bg-white/5"
+            className="w-full sm:w-auto inline-flex items-center justify-center rounded-xl border border-black/10 dark:border-white/10 px-5 py-2.5 text-sm hover:bg-black/5 dark:hover:bg-white/5"
           >
             Saber mais
           </a>

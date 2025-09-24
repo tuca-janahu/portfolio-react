@@ -299,8 +299,8 @@ const Cubes: React.FC<CubesProps> = ({
   } as React.CSSProperties;
 
   return (
-    <div className="relative w-1/2 max-md:w-11/12 aspect-square" style={wrapperStyle}>
-      <div ref={sceneRef} className="grid w-full h-full" style={sceneStyle}>
+    <div className="relative aspect-square " style={wrapperStyle}>
+      <div ref={sceneRef} className="grid w-fit h-fit px-12 pt-8" style={sceneStyle}>
         {cells.map((_, r) =>
           cells.map((__, c) => (
             <div
