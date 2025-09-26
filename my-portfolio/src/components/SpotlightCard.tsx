@@ -21,7 +21,7 @@ export function SpotlightCard({
     <div
       ref={ref}
       onMouseMove={handleMouseMove}
-      className={`group relative rounded-2xl border border-black/10 dark:border-white/10 bg-white/50 dark:bg-neutral-900/50 overflow-hidden ${className}`}
+      className={`group relative rounded-2xl border border-black/10 dark:border-white/10 bg-neutral-100/50 dark:bg-neutral-900/50 overflow-hidden ${className}`}
     >
       {/* halo */}
       <div
@@ -34,7 +34,7 @@ export function SpotlightCard({
       {/* brilho da borda */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-transparent group-hover:ring-indigo-400/40"
+        className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-transparent group-hover:ring-indigo-400 dark:group-hover:ring-indigo-400/40"
       />
       <div className="relative z-10">{children}</div>
     </div>

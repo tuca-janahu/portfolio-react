@@ -1,7 +1,20 @@
 function About() {
+
+  function currentAge() {
+    const birthdate = new Date("2005-04-12");
+    const today = new Date();
+    const age = today.getFullYear() - birthdate.getFullYear();
+    const monthDiff = today.getMonth() - birthdate.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthdate.getDate())) {
+      return age - 1;
+    }
+    return age;
+  }
+
   return (
     <main className="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-16">
       <h1 className="text-2xl sm:text-3xl font-semibold mb-6">Sobre</h1>
+      <p className="text-base text-black/70 dark:text-white/70">Tenho {currentAge()} anos.</p>
       <p className="text-base text-black/70 dark:text-white/70">
         Sou estudante de Engenharia da Computação no SENAI CIMATEC, apaixonado por tecnologia, desenvolvimento de software e otimização de processos.
         Tenho experiência em projetos de software, automação e liderança de equipes multidisciplinares.

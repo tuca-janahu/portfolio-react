@@ -1,4 +1,5 @@
 import { Link, NavLink, useNavigate } from "react-router";
+import { FaAdjust } from 'react-icons/fa';
 
 function Navbar() {
 
@@ -88,10 +89,9 @@ function ThemeToggle() {
       }}}
     >
       {/* Ícone simples puro CSS */}
-      <span className="relative block h-5 w-5">
-        <span className="absolute inset-0 rounded-full border border-black/40 dark:border-white/60"></span>
-        <span className="absolute inset-0 rounded-full translate-x-1 translate-y-1 bg-black/80 dark:bg-white/80 mix-blend-difference"></span>
-      </span>
+      <div className="cursor-pointer relative block ">
+        <FaAdjust />
+      </div>
     </button>
   );
 }
