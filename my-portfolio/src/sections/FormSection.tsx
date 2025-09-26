@@ -14,7 +14,7 @@ export default function FormSection() {
             </div>
 
    
-                <div className="aspect-square w-fit h-fit">           {/* centraliza o Cubes */}
+                <div className="aspect-square w-fit h-fit hidden sm:flex" >           {/* centraliza o Cubes */}
                   <Cubes
                     gridSize={8}          // mais células
                     cellGap={20}            // espaçamento entre cubos

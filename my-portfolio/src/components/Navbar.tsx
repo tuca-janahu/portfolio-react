@@ -1,8 +1,11 @@
-import { Link, NavLink, useNavigate } from "react-router";
-import { FaAdjust } from 'react-icons/fa';
+import Socials from "./Socials";
+import { Link, NavLink, useNavigate, useLocation } from "react-router";
+import { FaAdjust } from "react-icons/fa";
+import { FaBars } from 'react-icons/fa';
+import { FaXmark } from 'react-icons/fa6';
+import { useState, useEffect,  } from "react";
 
 function Navbar() {
-
   const navigate = useNavigate();
 
   function handleContactClick() {
@@ -14,6 +17,16 @@ function Navbar() {
     }
   }
 
+  const [open, setOpen] = useState<boolean>(false);
+
+  const location = useLocation();
+
+  // sempre que a URL mudar, fecha o menu mobile
+  useEffect(() => {
+    if (open) setOpen(false);
+  }, [location.pathname]); // <- fechou!
+
+
   return (
     <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-neutral-900/60 border-b border-black/5 dark:border-white/10">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 h-14 flex items-center justify-between">
@@ -22,6 +35,8 @@ function Navbar() {
             Artur Janahú
           </span>
         </Link>
+
+       
         <nav className="hidden sm:flex items-center gap-1">
           <NavItem to="/projects" label="Projetos" />
           <NavItem to="/about" label="Sobre" />
@@ -29,22 +44,9 @@ function Navbar() {
           <NavItem to="/contact" label="Contato" />
         </nav>
 
-        <div className="flex items-center gap-4 ">
-        
-          <a href="https://github.com/tuca-janahu" target="_blank" rel="noopener noreferrer">
-          <img className="h-7 w-7 cursor-pointer dark:invert hover:opacity-50 " src="/github.png" alt="GitHub" />
-          </a>
-        
-         <a href="https://www.linkedin.com/in/artur-janah%C3%BA-2530b5272/" target="_blank" rel="noopener noreferrer">
-          <img className="h-7 w-7 cursor-pointer dark:invert hover:opacity-50" src="/linkedin.png" alt="LinkedIn" />
-      </a>
-          <a href="https://wa.me/5571993955005?text=Ol%C3%A1%2C%20vi%20seu%20portfolio%20e%20tenho%20interesse%20em%20parceria%21" target="_blank" rel="noopener noreferrer">
-            <img className="h-7 w-7 cursor-pointer dark:invert hover:opacity-50" src="/whatsapp.png" alt="WhatsApp" />
-          </a>
-        </div>
+        <Socials />
 
         <div className="flex items-center gap-2">
-        
           <ThemeToggle />
           <button
             onClick={handleContactClick}
@@ -53,6 +55,22 @@ function Navbar() {
             Falar comigo
           </button>
         </div>
+         {open ? (
+          <FaXmark className="block sm:hidden" onClick={() => setOpen(!open)} />
+        ) : (
+          <FaBars className="block sm:hidden" onClick={() => setOpen(!open)} />
+        )}
+
+        {open && (
+          <div className="absolute top-14 left-0 right-0 bg-white dark:bg-black shadow-md">
+            <nav className="flex flex-col p-4">
+              <NavItem to="/projects" label="Projetos" />
+              <NavItem to="/about" label="Sobre" />
+              <NavItem to="/talks" label="Publicações" />
+          <NavItem to="/contact" label="Contato" />
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );
@@ -84,9 +102,10 @@ function ThemeToggle() {
         try {
           localStorage.setItem("theme", isDark ? "dark" : "light");
         } catch (error) {
-    // Log the error for debugging purposes
-    console.error("Failed to save theme to localStorage:", error);
-      }}}
+          // Log the error for debugging purposes
+          console.error("Failed to save theme to localStorage:", error);
+        }
+      }}
     >
       {/* Ícone simples puro CSS */}
       <div className="cursor-pointer relative block ">

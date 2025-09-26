@@ -1,6 +1,6 @@
 import { techs } from "../data/tech";
 
-export default function TechsList() {
+export default function TechList() {
   const list = techs; // sem limite: mostra todas
 
   return (
@@ -12,7 +12,7 @@ export default function TechsList() {
       <p className="text-sm sm:text-base text-lime-400 mb-8 sm:mb-12">
         Aqui estão algumas das tecnologias que eu uso:
       </p>
-      <div className="flex flex-wrap  gap-6">
+      <div className="justify-center flex flex-wrap  gap-6">
         {list.map((t) => (
           <a
             key={t.id}
