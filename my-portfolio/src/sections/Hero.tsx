@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 export default function Hero() {
   return (
-    <section className="relative isolate overflow-hidden bg-neutral-100 dark:bg-black/50">
+    <section className="relative isolate overflow-hidden bg-indigo-50 dark:bg-black/50">
       {/* Fundo com grid + spotlight central */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-[radial-gradient(50%_60%_at_50%_0%,rgba(239,235,255,0.5),transparent_100%)] dark:bg-[radial-gradient(50%_60%_at_50%_0%,rgba(129,140,248,0.2),transparent_60%)]" />
