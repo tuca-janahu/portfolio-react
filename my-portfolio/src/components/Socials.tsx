@@ -14,7 +14,7 @@ export default function Socials() {
       </a>
 
       <a
-        href="https://www.linkedin.com/in/artur-janah%C3%BA-2530b5272/"
+        href="https://www.linkedin.com/in/artur-janahu/"
         target="_blank"
         rel="noopener noreferrer"
       >

@@ -50,21 +50,21 @@ function About() {
         <p>
           Empresa: Urca Global Fund | Período: Abr 2024 - Atual
         </p>
-        <ul className="list-disc list-inside">
+        <ul className="list-disc list-outside ml-6">
           <li>Prototipação de Sistemas de Gerenciamento com Figma.</li>
-          <li>Programação e automação de processos com <span className="text-lime-600 dark:text-lime-400 font-semibold">Python</span> e <span className="text-lime-600 dark:text-lime-400 font-semibold">VBA</span>.</li>
+          <li>Programação e automação de processos com <span className="text-indigo-600 font-semibold">Python</span> e <span className="text-indigo-600 font-semibold">VBA</span>.</li>
           <li>Participação em revisões de código e testes automatizados para garantir a qualidade do software.</li>
         </ul>
       </div>
-      <h3 className="font-semibold text-lime-600 dark:text-lime-400">Projetista</h3>
+      <h3 className="font-semibold text-lime-600 dark:text-lime-400 ">Projetista do Núcleo de Computação</h3>
         <div className="gap-4 flex flex-col text-base text-black/70 dark:text-white/70 mb-10">
         <p>
           Empresa: Cimatec Jr, a Empresa Júnior do SENAI CIMATEC | Período: Abr 2024 - Set 2025
         </p>
-        <ul className="list-disc list-inside">
+        <ul className="list-disc list-outside ml-6">
           <li>Desenvolvimento de funcionalidades para aplicações web usando React e Node.js.</li>
-          <li>Colaboração com equipes de design e produto para criar interfaces intuitivas.</li>
-          <li>Participação em revisões de código e testes automatizados para garantir a qualidade do software.</li>
+          <li>Implementação e prática em Metodologia Scrum.</li>
+          <li>Criação de websites e aplicações web responsivas.</li>
         </ul>
       </div>
     </main>

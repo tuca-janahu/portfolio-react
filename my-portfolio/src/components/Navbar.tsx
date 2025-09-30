@@ -24,7 +24,7 @@ function Navbar() {
   // sempre que a URL mudar, fecha o menu mobile
   useEffect(() => {
     if (open) setOpen(false);
-  }, [location.pathname]); // <- fechou!
+  }, [location.pathname]);
 
 
   return (
@@ -67,7 +67,7 @@ function Navbar() {
               <NavItem to="/projects" label="Projetos" />
               <NavItem to="/about" label="Sobre" />
               <NavItem to="/talks" label="Publicações" />
-          <NavItem to="/contact" label="Contato" />
+              <NavItem to="/contact" label="Contato" />
             </nav>
           </div>
         )}
@@ -107,7 +107,6 @@ function ThemeToggle() {
         }
       }}
     >
-      {/* Ícone simples puro CSS */}
       <div className="cursor-pointer relative block ">
         <FaAdjust />
       </div>
