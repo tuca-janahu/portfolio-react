@@ -14,7 +14,7 @@ export default function FormSection() {
             </div>
 
    
-                <div className="aspect-square w-fit h-fit hidden sm:flex" >           {/* centraliza o Cubes */}
+                <div className="aspect-square w-fit h-fit hidden sm:flex not-dark:hidden" >           {/* centraliza o Cubes */}
                   <Cubes
                     gridSize={8}          // mais células
                     cellGap={20}            // espaçamento entre cubos
@@ -22,8 +22,24 @@ export default function FormSection() {
                     cubeSize={30}          // tamanho do cubo
                     radius={4}
                     borderStyle="2px dashed #a3e635" // lime-400
-                    faceColor="#2e2e2e50"
+                    faceColor="#1f1f1f"
                     rippleColor="#a3e635"
+                    rippleSpeed={3.0}
+                    autoAnimate
+                    rippleOnClick
+                  />
+                </div>
+
+                <div className="aspect-square w-fit h-fit hidden sm:flex dark:hidden" >           {/* centraliza o Cubes */}
+                  <Cubes
+                    gridSize={8}          // mais células
+                    cellGap={20}            // espaçamento entre cubos
+                    maxAngle={60}
+                    cubeSize={30}          // tamanho do cubo
+                    radius={4}
+                    borderStyle="2px dashed #4423b0" // lime-400
+                    faceColor="#c4b3ff"
+                    rippleColor="#312c96"
                     rippleSpeed={3.0}
                     autoAnimate
                     rippleOnClick

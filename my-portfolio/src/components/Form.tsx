@@ -116,7 +116,7 @@ const successURL =
             name="name"
             type="text"
             required
-            className="mt-1 w-full rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-lime-400"
+            className="mt-1 w-full rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-lime-400"
           />
         </div>
 
@@ -132,7 +132,7 @@ const successURL =
             name="email"
             type="email"
             required
-            className="mt-1 w-full rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-lime-400"
+            className="mt-1 w-full rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-lime-400"
           />
         </div>
 
@@ -147,7 +147,7 @@ const successURL =
             id={subjectId}
             name="subject"
             type="text"
-            className="mt-1 w-full rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-lime-400"
+            className="mt-1 w-full rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-lime-400"
           />
         </div>
 
@@ -163,7 +163,7 @@ const successURL =
             name="message"
             rows={5}
             required
-            className="mt-1 w-full resize-y rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-lime-400"
+            className="mt-1 w-full resize-y rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-lime-400"
           />
         </div>
 
@@ -178,7 +178,7 @@ const successURL =
           <button
             type="submit"
             disabled={loading}
-            className="inline-flex items-center justify-center rounded-xl bg-lime-400 text-neutral-950 px-5 py-2.5 text-sm font-medium shadow hover:bg-neutral-100 cursor-pointer transition-colors disabled:opacity-60"
+            className="inline-flex items-center justify-center rounded-xl dark:bg-lime-400 bg-indigo-600 text-white dark:text-neutral-950 px-5 py-2.5 text-sm font-medium  hover:bg-neutral-950 dark:hover:bg-neutral-100 cursor-pointer transition-colors disabled:opacity-60"
           >
             {loading ? "Enviando…" : "Enviar"}
           </button>

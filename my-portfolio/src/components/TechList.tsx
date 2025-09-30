@@ -9,7 +9,7 @@ export default function TechList() {
       id="techs"
     >
       <h2 className="text-xl sm:text-3xl font-semibold mb-3">Tecnologias</h2>
-      <p className="text-sm sm:text-base text-lime-600 dark:text-lime-400 mb-8 sm:mb-12">
+      <p className="text-sm sm:text-base text-indigo-600 dark:text-lime-400 mb-8 sm:mb-12">
         Aqui estão algumas das tecnologias que eu uso:
       </p>
       <div className="justify-center flex flex-wrap  gap-6">

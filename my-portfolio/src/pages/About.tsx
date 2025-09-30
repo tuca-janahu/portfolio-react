@@ -45,25 +45,25 @@ function About() {
 
       <h2 className="text-xl sm:text-2xl font-semibold mt-10 mb-4">Experiências</h2>
       
-        <h3 className="font-semibold text-lime-600 dark:text-lime-400">Estágio em Desenvolvimento de Software</h3>
+        <h3 className="font-semibold text-indigo-600 dark:text-lime-400">Estágio em Desenvolvimento de Software</h3>
         <div className="gap-4 flex flex-col text-base text-black/70 dark:text-white/70 mb-10">
         <p>
           Empresa: Urca Global Fund | Período: Abr 2024 - Atual
         </p>
         <ul className="list-disc list-outside ml-6">
-          <li>Prototipação de Sistemas de Gerenciamento com Figma.</li>
-          <li>Programação e automação de processos com <span className="text-indigo-600 font-semibold">Python</span> e <span className="text-indigo-600 font-semibold">VBA</span>.</li>
+          <li>Prototipação de Sistemas de Gerenciamento com <span className="font-bold">Figma</span>.</li>
+          <li>Programação e automação de processos com <span className="font-bold">Python</span> e <span className="font-bold">VBA</span>.</li>
           <li>Participação em revisões de código e testes automatizados para garantir a qualidade do software.</li>
         </ul>
       </div>
-      <h3 className="font-semibold text-lime-600 dark:text-lime-400 ">Projetista do Núcleo de Computação</h3>
+      <h3 className="font-semibold text-indigo-600 dark:text-lime-400 ">Projetista do Núcleo de Computação</h3>
         <div className="gap-4 flex flex-col text-base text-black/70 dark:text-white/70 mb-10">
         <p>
           Empresa: Cimatec Jr, a Empresa Júnior do SENAI CIMATEC | Período: Abr 2024 - Set 2025
         </p>
         <ul className="list-disc list-outside ml-6">
-          <li>Desenvolvimento de funcionalidades para aplicações web usando React e Node.js.</li>
-          <li>Implementação e prática em Metodologia Scrum.</li>
+          <li>Desenvolvimento de funcionalidades para aplicações web usando <span className="font-bold">React</span> e <span className="font-bold">Node.js</span>.</li>
+          <li>Implementação e prática em Metodologia <span className="font-bold">Scrum</span>.</li>
           <li>Criação de websites e aplicações web responsivas.</li>
         </ul>
       </div>
