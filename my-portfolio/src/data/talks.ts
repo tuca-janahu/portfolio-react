@@ -30,6 +30,6 @@ export const talks: Talk[] = [
       slides: "https://www.canva.com/design/DAGzto6JgSs/4ZNeS-nFotOOrKcY5f8ZTw/view?utm_content=DAGzto6JgSs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h56d1968374",
       prototype: "https://www.figma.com/proto/iLvq6x3wJ1FcNBoA8KFS01/BrainSpark---Prot%C3%B3tipo?node-id=1-3&p=f&t=yQX7Ev3PmXGvBb79-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3"
     },
-    tags: ["Pesquisa", "SBGames", "BrainSpark"],
+    tags: ["Saúde", "Jogos", "Alzheimer"],
   },
 ];

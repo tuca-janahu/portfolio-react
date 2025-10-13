@@ -5,7 +5,7 @@ import { SpotlightCard } from "../components/SpotlightCard";
 export default function TalksList() {
   return (
     <section className="mx-auto max-w-6xl px-4 sm:px-6 py-12 sm:py-16">
-      <h2 className="text-xl sm:text-2xl font-semibold mb-6">Publicações</h2>
+      <h2 className="text-xl sm:text-3xl font-semibold mb-6">Publicações</h2>
 
       <div className="grid gap-4 sm:gap-6">
         {talks.map((t) => (
@@ -13,7 +13,7 @@ export default function TalksList() {
             <div className="flex flex-col gap-2">
               <div className="flex items-start justify-between gap-6">
                 <div>
-                  <h3 className="text-base sm:text-lg font-medium">{t.title}</h3>
+                  <h3 className="text-base sm:text-lg font-medium pb-2">{t.title}</h3>
                   <p className="text-sm text-black/70 dark:text-white/70">
                     {t.venue} · {t.year}
                   </p>

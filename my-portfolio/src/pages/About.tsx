@@ -14,7 +14,7 @@ function About() {
   }
 
   return (
-    <main className="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-16">
+    <main className="mx-auto max-w-5xl px-4 sm:px-6 py-12 sm:py-16 ">
       <h1 className="text-2xl sm:text-3xl font-semibold mb-6">Sobre</h1>
       <div className="gap-6 flex flex-col text-base text-black/70 dark:text-white/70">
         <p>
