@@ -38,7 +38,7 @@ export const projects: Project[] = [
   {
     id: "fit-track",
     title: "Fit Track",
-    description: "Aplicativo web para registro de treinos.",
+    description: "Aplicação de um mini projeto fullstack para registro de treinos, com autenticação JWT.",
     tags: ["React", "TypeScript", "MongoDB", "Node.js"],
     href: "https://fit-track.tucajanahu.app/",
   }
