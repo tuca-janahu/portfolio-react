@@ -34,5 +34,12 @@ export const projects: Project[] = [
     description: "Projeto simples com Node e Express para aprofundamento das suas funcionalidades",
     tags: ["Node.js", "Typescript", "Express"],
     href: "https://back.list.tucajanahu.app/",
+  },
+  {
+    id: "fit-track",
+    title: "Fit Track",
+    description: "Aplicativo web para registro de treinos.",
+    tags: ["React", "TypeScript", "MongoDB", "Node.js"],
+    href: "https://fit-track.tucajanahu.app/",
   }
 ];
