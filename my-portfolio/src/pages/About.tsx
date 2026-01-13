@@ -48,7 +48,7 @@ function About() {
         <h3 className="font-semibold text-indigo-600 dark:text-lime-400">Estágio em Resource Planning</h3>
         <div className="gap-4 flex flex-col text-base text-black/70 dark:text-white/70 mb-10">
         <p>
-          Empresa: Ford Motor Company | Período: Jan 2025 - Atual
+          Ford Motor Company | Período: Jan 2025 - Atual
         </p>
         <ul className="list-disc list-outside ml-6">
           <li>Auxílio em planejamento de recursos da empresa</li>
@@ -59,7 +59,7 @@ function About() {
         <h3 className="font-semibold text-indigo-600 dark:text-lime-400">Estágio em Desenvolvimento de Software</h3>
         <div className="gap-4 flex flex-col text-base text-black/70 dark:text-white/70 mb-10">
         <p>
-          Empresa: Urca Global Fund | Período: Abr 2024 - Out 2025
+          Urca Global Fund | Período: Abr 2024 - Out 2025
         </p>
         <ul className="list-disc list-outside ml-6">
           <li>Prototipação de Sistemas de Gerenciamento com <span className="font-bold">Figma</span>.</li>
@@ -70,7 +70,7 @@ function About() {
       <h3 className="font-semibold text-indigo-600 dark:text-lime-400 ">Projetista do Núcleo de Computação</h3>
         <div className="gap-4 flex flex-col text-base text-black/70 dark:text-white/70 mb-10">
         <p>
-          Empresa: Cimatec Jr, a Empresa Júnior do SENAI CIMATEC | Período: Abr 2024 - Set 2025
+          Cimatec Jr, a Empresa Júnior do SENAI CIMATEC | Período: Abr 2024 - Set 2025
         </p>
         <ul className="list-disc list-outside ml-6">
           <li>Desenvolvimento de funcionalidades para aplicações web usando <span className="font-bold">React</span> e <span className="font-bold">Node.js</span>.</li>
