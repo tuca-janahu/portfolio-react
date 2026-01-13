@@ -45,10 +45,21 @@ function About() {
 
       <h2 className="text-xl sm:text-2xl font-semibold mt-10 mb-4">Experiências</h2>
       
+        <h3 className="font-semibold text-indigo-600 dark:text-lime-400">Estágio em Resource Planning</h3>
+        <div className="gap-4 flex flex-col text-base text-black/70 dark:text-white/70 mb-10">
+        <p>
+          Empresa: Ford Motor Company | Período: Jan 2025 - Atual
+        </p>
+        <ul className="list-disc list-outside ml-6">
+          <li>Auxílio em planejamento de recursos da empresa</li>
+          <li>Automatização de processos internos utilizando <span className="font-bold">Power BI</span></li>
+        </ul>
+      </div>
+        
         <h3 className="font-semibold text-indigo-600 dark:text-lime-400">Estágio em Desenvolvimento de Software</h3>
         <div className="gap-4 flex flex-col text-base text-black/70 dark:text-white/70 mb-10">
         <p>
-          Empresa: Urca Global Fund | Período: Abr 2024 - Atual
+          Empresa: Urca Global Fund | Período: Abr 2024 - Out 2025
         </p>
         <ul className="list-disc list-outside ml-6">
           <li>Prototipação de Sistemas de Gerenciamento com <span className="font-bold">Figma</span>.</li>
