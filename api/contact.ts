@@ -86,13 +86,13 @@ export default async function handler(
     return response.status(400).json({ error: "Um ou mais campos excedem o limite permitido." });
   }
 
-  const apiKey = process.env.RESEND_API_KEY;
-  const to = process.env.RESEND_TO_EMAIL || "arturjanahu@gmail.com";
+  const apiKey = process.env.VITE_RESEND_API_KEY;
+  const to = process.env.VITE_RESEND_TO_EMAIL || "arturjanahu@gmail.com";
   const from =
-    process.env.RESEND_FROM_EMAIL || "Portfolio <onboarding@resend.dev>";
+    process.env.VITE_RESEND_FROM_EMAIL || "Portfolio <onboarding@resend.dev>";
 
   if (!apiKey) {
-    console.error("RESEND_API_KEY não foi configurada.");
+    console.error("VITE_RESEND_API_KEY não foi configurada.");
     return response
       .status(500)
       .json({ error: "O serviço de contato não está configurado." });
