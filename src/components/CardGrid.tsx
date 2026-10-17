@@ -17,12 +17,23 @@ function CardGrid({
       {list.map((p) => (
         <SpotlightCard key={p.id} className="p-4 sm:p-5">
           <div className="flex h-full flex-col">
-            <h3 className="text-lg font-medium mb-1">{p.title}</h3>
+            <div className="mb-1 flex items-start justify-between gap-3">
+              <h3 className="text-lg font-medium">{p.title}</h3>
+              <span
+                className={`shrink-0 rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide ${
+                  p.type === "fullstack"
+                    ? "bg-indigo-100 text-indigo-700 dark:bg-indigo-500/20 dark:text-indigo-300"
+                    : "bg-lime-100 text-lime-700 dark:bg-lime-400/15 dark:text-lime-300"
+                }`}
+              >
+                {p.type === "fullstack" ? "Fullstack" : "Frontend"}
+              </span>
+            </div>
             <p className="text-sm text-black/70 dark:text-white/70 mb-3">{p.description}</p>
             <div className="mt-auto flex flex-wrap gap-1.5">
-              {p.tags.map((t) => (
-                <span key={t} className="text-[11px] px-2 py-0.5 rounded-full bg-black/5 dark:bg-white/10">
-                  {t}
+              {p.highlights.map((highlight) => (
+                <span key={highlight} className="text-[11px] px-2 py-0.5 rounded-full bg-black/5 dark:bg-white/10">
+                  {highlight}
                 </span>
               ))}
             </div>
