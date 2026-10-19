@@ -39,7 +39,7 @@ function RepositoryButton({ title, type, repositories }: RepositoryButtonProps) 
   }, [isOpen]);
 
   const buttonClasses =
-    "inline-flex w-full shrink-0 items-center justify-center rounded-xl border border-black/10 p-3 text-lg transition-colors hover:bg-black/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 dark:border-white/10 dark:hover:bg-white/5";
+    "inline-flex w-full shrink-0 items-center justify-center rounded-xl border border-black/10 p-3 text-lg transition-colors hover:bg-indigo-600/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 dark:border-white/10 dark:hover:bg-white/5";
 
   if (type === "frontend" || !repositories.backend) {
     return (
@@ -84,7 +84,7 @@ function RepositoryButton({ title, type, repositories }: RepositoryButtonProps) 
             href={repositories.frontend}
             target="_blank"
             rel="noreferrer"
-            className="block rounded-lg px-3 py-2 text-sm hover:bg-black/5 focus:bg-black/5 focus:outline-none dark:hover:bg-white/10 dark:focus:bg-white/10"
+            className="block rounded-lg px-3 py-2 text-sm hover:bg-indigo-600/5 focus:bg-indigo-600/5 focus:outline-none dark:hover:bg-white/10 dark:focus:bg-white/10"
           >
             Repositório frontend
           </a>
@@ -93,7 +93,7 @@ function RepositoryButton({ title, type, repositories }: RepositoryButtonProps) 
             href={repositories.backend}
             target="_blank"
             rel="noreferrer"
-            className="block rounded-lg px-3 py-2 text-sm hover:bg-black/5 focus:bg-black/5 focus:outline-none dark:hover:bg-white/10 dark:focus:bg-white/10"
+            className="block rounded-lg px-3 py-2 text-sm hover:bg-indigo-600/5 focus:bg-indigo-600/5 focus:outline-none dark:hover:bg-white/10 dark:focus:bg-white/10"
           >
             Repositório backend
           </a>
@@ -128,7 +128,7 @@ function CardGrid({
             <p className="text-sm text-black/70 dark:text-white/70 mb-3">{p.description}</p>
             <div className="mt-auto flex flex-wrap gap-1.5">
               {p.highlights.map((highlight) => (
-                <span key={highlight} className="text-[11px] px-2 py-0.5 rounded-full bg-black/5 dark:bg-white/10">
+                <span key={highlight} className="text-[11px] px-2 py-0.5 rounded-full bg-indigo-600/5 dark:bg-white/10">
                   {highlight}
                 </span>
               ))}
@@ -140,7 +140,7 @@ function CardGrid({
                   href={p.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex col-span-5 min-h-[42px] flex-1 items-center justify-center rounded-xl border border-black/10 px-5 py-2.5 text-sm hover:bg-black/5 dark:border-white/10 dark:hover:bg-white/5 sm:flex-none"
+                  className="inline-flex col-span-5 min-h-[42px] flex-1 items-center justify-center rounded-xl border border-indigo-500/10 px-5 py-2.5 text-sm hover:bg-indigo-600/5 dark:border-white/10 dark:hover:bg-white/5 sm:flex-none"
                 >
                   Ver projeto
                 </a>

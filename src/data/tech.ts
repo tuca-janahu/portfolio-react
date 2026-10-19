@@ -1,5 +1,6 @@
 import { FaReact, FaJs, FaPython, FaNodeJs, FaGitAlt, FaMicrosoft} from 'react-icons/fa';
 import { BiLogoTailwindCss, BiLogoTypescript } from 'react-icons/bi';
+import { SiPrisma } from "react-icons/si";
 import { AiOutlineConsoleSql } from 'react-icons/ai';
 import type { IconType } from 'react-icons/lib';
 
@@ -59,6 +60,12 @@ export const techs: Tech[] = [
     name: "Git",
     icon: FaGitAlt,
     url: "https://git-scm.com/doc"
+  },
+  {
+    id: "prisma",
+    name: "Prisma",
+    icon: SiPrisma,
+    url: "https://www.prisma.io/docs/"
   },
   {
     id: "vba",
