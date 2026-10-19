@@ -5,6 +5,10 @@ export type Project = {
   description: string;
   highlights: string[];
   href?: string;
+  repositories: {
+    frontend: string;
+    backend?: string;
+  };
 };
 
 export const projects: Project[] = [
@@ -13,8 +17,12 @@ export const projects: Project[] = [
     title: "Amigo Secreto",
     type: "fullstack",
     description: "Aplicação web para sorteio de amigo secreto, com envio de e-mails automáticos.",
-    highlights: ["Sorteio automatizado", "E-mails transacionais", "Regras de negócio"],
+    highlights: ["Sorteio automatizado", "Serviço de e-mails com Resend", "Níveis de acesso"],
     href: "https://amigosecreto.janahu.dev.br/",
+    repositories: {
+      frontend: "https://github.com/tuca-janahu/amigo-secreto-front",
+      backend: "https://github.com/tuca-janahu/amigo-secreto-back",
+    },
   },
   {
     id: "fit-track",
@@ -23,6 +31,10 @@ export const projects: Project[] = [
     description: "Aplicação de um mini projeto fullstack para registro de treinos, com autenticação JWT.",
     highlights: ["Autenticação JWT", "Gerenciamento de treinos", "API REST"],
     href: "https://fit-track.janahu.dev.br/",
+    repositories: {
+      frontend: "https://github.com/tuca-janahu/mini-projeto-front",
+      backend: "https://github.com/tuca-janahu/mini-projeto-back",
+    },
   },
   {
     id: "calc-imc",
@@ -31,6 +43,9 @@ export const projects: Project[] = [
     description: "App com React + Typescript para calcular o Índice de Massa Corporal (IMC).",
     highlights: ["Cálculo de IMC", "Feedback visual", "Projeto básico", "Interface responsiva"],
     href: "https://imc.janahu.dev.br/",
+    repositories: {
+      frontend: "https://github.com/tuca-janahu/mp-calculadora-imc",
+    },
   },
   // {
   //   id: "ticketgen",
@@ -47,6 +62,9 @@ export const projects: Project[] = [
     description: "Projeto Simples com React + TS para calcular a idade exata em anos, meses e dias.",
     highlights: ["Cálculo de datas", "Validação de formulário", "Resultado detalhado"],
     href: "https://age.janahu.dev.br/",
+    repositories: {
+      frontend: "https://github.com/tuca-janahu/frontend-mentor-3",
+    },
   },
 
 ];

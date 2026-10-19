@@ -51,8 +51,9 @@ function About() {
           Ford Motor Company | Período: Jan 2025 - Atual
         </p>
         <ul className="list-disc list-outside ml-6">
-          <li>Auxílio em planejamento de recursos da empresa</li>
-          <li>Automatização de processos internos utilizando <span className="font-bold">Power BI</span></li>
+          <li>Automação de processos internos utilizando <span className="font-bold">Power BI</span>, <span className="font-bold">Power Automate</span> e <span className="font-bold">Python</span></li>
+          <li>Geração automática de relatórios e dashboards para análise de dados</li>
+          <li>Desenvolvimento de plataformas internas projetadas para +1500 usuários</li>
         </ul>
       </div>
         
