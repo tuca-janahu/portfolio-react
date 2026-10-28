@@ -1,4 +1,4 @@
-import { FaReact, FaJs, FaPython, FaNodeJs, FaGitAlt, FaMicrosoft} from 'react-icons/fa';
+import { FaReact, FaJs, FaPython, FaNodeJs, FaGitAlt, FaMicrosoft, FaDocker} from 'react-icons/fa';
 import { BiLogoTailwindCss, BiLogoTypescript } from 'react-icons/bi';
 import { SiPrisma } from "react-icons/si";
 import { AiOutlineConsoleSql } from 'react-icons/ai';
@@ -54,6 +54,12 @@ export const techs: Tech[] = [
     name: "Node.js",
     icon: FaNodeJs,
     url: "https://nodejs.org/en/docs/"
+  },
+  {
+    id: "docker",
+    name: "Docker",
+    icon: FaDocker,
+    url: "https://docs.docker.com/"
   },
   {
     id: "git",
